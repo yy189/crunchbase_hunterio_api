@@ -1,4 +1,3 @@
-# import datetime
 import crunchbase_api
 import os
 

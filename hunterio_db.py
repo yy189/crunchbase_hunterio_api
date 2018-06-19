@@ -2,6 +2,7 @@ import csv
 import hunterio_api
 from urllib.parse import urlparse
 import os
+# from api_keys import API_KEYS
 
 cb_path = "companies-6-13-2018.csv"
 out_path = "emails_searched_by_domain.csv"
@@ -29,7 +30,7 @@ def injest_contacts():
             generic_emails = ""
             personal_emails = []
 
-            emails = hunterio_api.search_domain(item["domain"], limit=10)
+            emails = hunterio_api.search_domain(item["domain"], api_key, limit=10)
 
             for e in emails:
                 print(e)
@@ -96,7 +97,28 @@ def read_existing_companies(filename):
 
     return existing_companies
 
+def init_account_info():
+    with open('api_key.txt', 'r') as f_txt:
+        with open('api_keys.py', 'w') as f_py:
+            f_py.write("API_KEYS = [\n")
+
+            for api_key in f_txt.readlines():
+                api_key = api_key.rstrip()
+                result = hunterio_api.fetch_account_info(api_key)
+                if not len(result):
+                    print("Fake api_key!")
+                    f_py.write("]")
+                    return
+
+                # 写个排序，朋友。
+                f_py.write("\t\t\t{'api_key':'" + api_key + "', 'available':'" + str(result[0]) + "', 'reset_date':'" + result[1] + "'},\n")
+
+            f_py.write("]")
+
+    print("Account information up-to-date!")
+
 if __name__ == "__main__":
     # pass
     # read_csv("companies-6-13-2018.csv")
-    injest_contacts()
+    # injest_contacts()
+    init_account_info()
