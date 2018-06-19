@@ -2,13 +2,14 @@ import csv
 import hunterio_api
 from urllib.parse import urlparse
 import os
-# from api_keys import API_KEYS
+from api_keys import API_KEYS
+from settings import LIMIT
 
 cb_path = "companies-6-13-2018.csv"
 out_path = "emails_searched_by_domain.csv"
 
-def injest_contacts():
-    companies = read_companies_csv(cb_path, out_path)
+
+def inject_contacts(companies, api_key):
 
     exists = False
     if os.path.isfile(out_path):
@@ -30,7 +31,7 @@ def injest_contacts():
             generic_emails = ""
             personal_emails = []
 
-            emails = hunterio_api.search_domain(item["domain"], api_key, limit=10)
+            emails = hunterio_api.search_domain(item["domain"], api_key, limit=LIMIT)
 
             for e in emails:
                 print(e)
@@ -86,6 +87,7 @@ def read_companies_csv(cb_path, out_path):
 
     return companies
 
+
 def read_existing_companies(filename):
     existing_companies = set('')
 
@@ -97,28 +99,52 @@ def read_existing_companies(filename):
 
     return existing_companies
 
-def init_account_info():
+
+def get_account_info():
     with open('api_key.txt', 'r') as f_txt:
         with open('api_keys.py', 'w') as f_py:
             f_py.write("API_KEYS = [\n")
 
+            results = []
             for api_key in f_txt.readlines():
                 api_key = api_key.rstrip()
                 result = hunterio_api.fetch_account_info(api_key)
                 if not len(result):
-                    print("Fake api_key!")
+                    print("Fake api_key: " + api_key)
                     f_py.write("]")
-                    return
+                    return False
 
-                # 写个排序，朋友。
-                f_py.write("\t\t\t{'api_key':'" + api_key + "', 'available':'" + str(result[0]) + "', 'reset_date':'" + result[1] + "'},\n")
+                results.append({'api_key': api_key, 'available': str(result[0]), 'reset_date': result[1]})
 
+            results = sorted(results, key=lambda x:x['available'], reverse=True)
+            for r in results:
+                f_py.write("\t\t\t{'api_key':'" + r['api_key'] + "', 'available':'" + r['available'] + "', 'reset_date':'" + r['reset_date'] + "'},\n")
             f_py.write("]")
 
     print("Account information up-to-date!")
+    return True
 
 if __name__ == "__main__":
-    # pass
-    # read_csv("companies-6-13-2018.csv")
-    # injest_contacts()
-    init_account_info()
+    if not get_account_info():
+        exit(1)
+
+    # cb_path = input("Crunchbase file path: ")
+    companies = read_companies_csv(cb_path, out_path)
+    # num = len(companies)
+    num = 10
+    count = 0
+    key_idx = 0
+    while count < num:
+        available = int(API_KEYS[key_idx]["available"])
+
+        if available == 0:
+            print("Out of available api_keys! Please add more api_keys OR wait until the reset date!")
+            break
+
+        api_key = API_KEYS[key_idx]["api_key"]
+        inject_contacts(companies[count:available-1 if available < num else num-1], api_key)
+        count += available
+        key_idx += 1
+
+    get_account_info()
+    print("Woohoo! Mission complete!")

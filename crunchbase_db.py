@@ -70,7 +70,7 @@ def insert_company(company_uuid, company):
     print("post id is ", post_id)
 
 
-def injest_companies():
+def inject_companies():
     current = 1
     batch_size = 10
     max_batches = 100

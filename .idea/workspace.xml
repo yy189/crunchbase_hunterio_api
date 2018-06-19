@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73949a29-e599-4fe8-b6fa-89a7d6d82983" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api_key.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crunchbase_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/crunchbase_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crunchbase_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/crunchbase_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emails_searched_by_domain.csv" beforeDir="false" afterPath="$PROJECT_DIR$/emails_searched_by_domain.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunterio_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunterio_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hunterio_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunterio_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +23,8 @@
       <file leaf-file-name="crunchbase_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crunchbase_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+            <state relative-caret-position="570">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -31,8 +35,8 @@
       <file leaf-file-name="hunterio_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hunterio_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -43,7 +47,7 @@
       <file leaf-file-name="emails_searched_by_domain.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emails_searched_by_domain.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="780">
               <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
             </state>
           </provider>
@@ -52,7 +56,8 @@
       <file leaf-file-name="crunchbase_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crunchbase_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-725">
+            <state relative-caret-position="1080">
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="e#18#39#0" expanded="true" />
               </folding>
@@ -63,8 +68,8 @@
       <file leaf-file-name="hunterio_db.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hunterio_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="-67">
+              <caret line="128" column="15" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="15" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -72,11 +77,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="api_key.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api_key.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            <state>
+              <caret column="40" selection-start-column="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -84,10 +98,15 @@
       <file leaf-file-name="api_keys.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api_keys.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+            <state relative-caret-position="45">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pip-selfcheck.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="companies-6-13-2018.csv" pinned="false" current-in-tab="false">
@@ -125,6 +144,7 @@
       <find>generic</find>
       <find>print</find>
       <find>search_domin</find>
+      <find>fake</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,9 +163,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hunter.io_api.py" />
         <option value="$PROJECT_DIR$/db.py" />
-        <option value="$PROJECT_DIR$/crunchbase_api.py" />
-        <option value="$PROJECT_DIR$/crunchbase_db.py" />
         <option value="$PROJECT_DIR$/hunterio_api.py" />
+        <option value="$PROJECT_DIR$/crunchbase_db.py" />
+        <option value="$PROJECT_DIR$/crunchbase_api.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hunterio_db.py" />
         <option value="$PROJECT_DIR$/api_keys.py" />
         <option value="$PROJECT_DIR$/api_key.txt" />
@@ -153,10 +174,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
-    <option name="y" value="94" />
+    <option name="x" value="97" />
+    <option name="y" value="81" />
     <option name="width" value="1070" />
-    <option name="height" value="702" />
+    <option name="height" value="649" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -328,14 +349,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="94" width="1070" height="702" extended-state="0" />
+    <frame x="97" y="81" width="1070" height="649" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25452814" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14013346" side_tool="true" visible="true" weight="0.2" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14013346" side_tool="true" visible="true" weight="0.2192029" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49952334" weight="0.3289256" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85986656" visible="true" weight="0.2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85986656" visible="true" weight="0.2192029" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32923076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -629,68 +650,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crunchbase_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hunterio_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/companies-6-13-2018.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-678" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crunchbase_db.py">
+    <entry file="file://$PROJECT_DIR$/hunterio_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
+        <state relative-caret-position="60">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
-            <element signature="e#18#39#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crunchbase_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emails_searched_by_domain.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="780">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crunchbase_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="e#18#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hunterio_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="-67">
+          <caret line="128" column="15" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api_keys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api_key.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>

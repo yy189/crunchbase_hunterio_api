@@ -40,6 +40,7 @@ def request_all_pages(url, query_args, extractor, max_pages=None):
 
     return results
 
+
 def fetch_companies(start_page=1, max_pages=None, filters={}):
     if not len(filters):
         filter = {"locations": "United States"}
