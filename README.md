@@ -1,6 +1,11 @@
 # crunchbase_hunterio_api
 
-Fill in crunchbase api_key and hunterio api_key to use.
-The code of crunchbase part is only for Open Data Map. 
+1. To use, add Hunter.io [api_key](https://hunter.io/api)s to api_key.txt.
 
-I was planning to add database operations in the hunterio_db.py (read companies_XXXXXXX.csv & read emails_searched_by_domain.csv and get the complement set), but I'm running out of requests at Hunter.io, so... I probably will fix this when I can get more requests.
+2. Edit LIMIT to set the max number of email addresses you want for each domain.
+
+3. Input is a csv with at least column\['Orgnization Name'\], \['Website'\]. E.g. MoviePass, https://www.moviepass.com/
+
+4. The Crunchbase part of code is only availale for [Open Data Map](https://data.crunchbase.com/docs/open-data-map) and you need to fill in the Crunchbase api_key and install Mongodb.
+
+:-)
