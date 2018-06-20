@@ -1,5 +1,7 @@
 # crunchbase_hunterio_api
 
+SEE THE NEWEST hunterio_api REPO!!!
+
 1. To use, add Hunter.io [api_key](https://hunter.io/api)s to api_key.txt.
 
 2. Edit LIMIT to set the max number of email addresses you want for each domain.
